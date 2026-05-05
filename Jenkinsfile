@@ -43,7 +43,7 @@ pipeline {
                         git init
                         git config user.name "${GITHUB_USER}"
                         git config user.email "${GITHUB_EMAIL}"
-                        git checkout -b gh-pages
+                        git checkout -B gh-pages
                         git add .
                         git commit -m "deploy: publication GitHub Pages build ${BUILD_NUMBER}"
                         git remote add origin ${GITHUB_REPO}
